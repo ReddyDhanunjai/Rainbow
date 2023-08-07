@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 300px;
+    
+
+  }
+
+
+  button{
+    
+    background-image: linear-gradient(green,yellow);
+  }
+</style>
+<body>
+
+  <button>TAP HERE
+  </button>
+     
+      
+</body>
+<script>
+  const button=document.querySelector("button");
+  const body=document.querySelector("body");
+  const color=['red','blue','green','yellow','black','lightgreen','lightblue','orange','lightpink','aqua'];
+  body.style.backgroundColor="pink";
+  
+  document.addEventListener('click',function()
+  {
+    const colorIndex=parseInt(Math.random()*color.length);
+    body.style.backgroundColor=color[colorIndex];
+  });
+  </script>
+</html>
